@@ -71,6 +71,22 @@
   </distributionManagement>
 </profile>
 	<profile>
+     <id>abc-deploy</id>
+ <distributionManagement>
+    <repository>
+      <id>abc-releases</id>
+      <name>spring-releases</name>
+      <url>http://ec2-18-222-142-128.us-east-2.compute.amazonaws.com:8081/nexus/content/repositories/abc-release/</url>
+    </repository>
+    <snapshotRepository>
+      <id>abc-snapshots</id>
+      <name>spring-snapshots</name>
+      <url>http://ec2-18-222-142-128.us-east-2.compute.amazonaws.com:8081/nexus/content/repositories/abc-snapshot/</url>
+    </snapshotRepository>
+  </distributionManagement>
+</profile>
+
+	<profile>
      <id>vcard-deploy</id>
  <distributionManagement>
     <repository>
